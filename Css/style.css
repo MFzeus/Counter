@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Redaction 50', sans-serif;
+    background-color: #e1e8eb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.background {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 254px;
+    width: 100%;
+    background-image: linear-gradient(to right,
+            rgba(163, 0, 84, 0.9),
+            rgba(24, 120, 175, 0.9));
+}
+
+.header_title {
+    font-size: 65px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 225, 0.92);
+    margin-top: 75px;
+}
+
+.header_title--span {
+    font-weight: 300;
+}
+
+.Container {
+    width: 1050px;
+    height: 520px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 55px;
+    display: flex;
+    overflow: hidden;
+}
+
+textarea {
+    all: unset;
+}
+.textarea {
+    resize: none;
+    flex: 2;
+    font: inherit;
+    padding: 30px 40px;
+    font-size: 22px;
+}
+.textarea::placeholder{
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+.Athure_Name {
+    text-align: center;
+}
+.Boxes{
+    display: flex;
+     flex: 1.3; 
+    background-color: #f1f6f8;
+    flex-wrap: wrap;
+}
+.Box{
+    flex: 1 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Box:nth-child(1),
+.Box:nth-child(2){
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+.Box:nth-child(2),
+.Box:nth-child(4){
+    border-left: 1px solid rgba(0, 0, 0, 0.08);
+}
+.Box_number{
+    color: #ff0000;
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
